@@ -1,5 +1,26 @@
 # Probabilities
 
+```{r table, echo=TRUE}
+table = matrix(c(10,20,20,40),ncol=2,byrow=TRUE)
+colnames(table) = c("B","B1")
+rownames(table) = c("A","A1")
+table = as.table(table)
+table
+
+
+```
+
+```{r probabilities, echo=TRUE}
+probA = sum(table[1,])/sum(table)
+probA
+
+probB = sum(table[,1])/sum(table)
+probB
+
+probAB = probA + probB
+probAB
+```
+
 Based on the table, the probability of landing on Event 'A' is .3333 or 1/3. The probability for landing on Event 'B' is also 1/3, and the probability for landing on either event A or B is .5511, or 55.11%.
 
 # Bayes Theorem
