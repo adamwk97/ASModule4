@@ -1,6 +1,13 @@
 ## Module 4 - Probability Theory
 
 ```
+table = matrix(c(10,20,20,40),ncol=2,byrow=TRUE)
+
+colnames(table) = c("B","B1")
+rownames(table) = c("A","A1")
+
+table = as.table(table)
+table
 ```
 
 ```{r table, echo=TRUE}
