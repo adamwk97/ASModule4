@@ -21,7 +21,7 @@ probAB = probA + probB
 probAB
 ```
 
-![table](https://i.gyazo.com/832b4ac53c97010ba2d53c5084542adc.png
+![table](./images/module4table.png)
 
 Based on the table, the probability of landing on Event 'A' is .3333 or 1/3. The probability for landing on Event 'B' is also 1/3, and the probability for landing on either event A or B is .5511, or 55.11%.
 
