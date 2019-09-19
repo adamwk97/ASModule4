@@ -1,5 +1,8 @@
 ## Module 4 - Probability Theory
 
+```
+```
+
 ```{r table, echo=TRUE}
 table = matrix(c(10,20,20,40),ncol=2,byrow=TRUE)
 
