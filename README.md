@@ -43,9 +43,11 @@ P( A1 ) = 5/365 =0.0136985 [It rains 5 days out of the year.]
 
 P( A2 ) = 360/365 = 0.9863014 [It does not rain 360 days out of the year.]
 
-P( B | A1 ) = 0.9 [When it rains, the weatherman predicts rain 90% of the time.]
+P( B || A1 ) = 0.9 [When it rains, the weatherman predicts rain 90% of the time.]
 
-P( B | A2 ) = 0.1 [When it does not rain, the weatherman predicts rain 10% of the time.]"
+//P( B|A1 ) = 0.9 [When it rains, the weatherman predicts rain 90% of the time.]
+
+#P( B | A2 ) = 0.1 [When it does not rain, the weatherman predicts rain 10% of the time.]"
 
 ```
 pA1 = .0136
