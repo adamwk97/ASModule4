@@ -10,17 +10,7 @@ table = as.table(table)
 table
 ```
 
-```{r table, echo=TRUE}
-table = matrix(c(10,20,20,40),ncol=2,byrow=TRUE)
-
-colnames(table) = c("B","B1")
-rownames(table) = c("A","A1")
-
-table = as.table(table)
-table
 ```
-
-```{r probabilities, echo=TRUE}
 probA = sum(table[1,])/sum(table)
 probA
 
@@ -49,13 +39,15 @@ P( A2 ) = 360/365 = 0.9863014 [It does not rain 360 days out of the year.]
 P( B | A1 ) = 0.9 [When it rains, the weatherman predicts rain 90% of the time.]
 P( B | A2 ) = 0.1 [When it does not rain, the weatherman predicts rain 10% of the time.]"
 
-```{r bayestheorem, echo=TRUE}
+```
 pA1 = .0136
 pA2 = .9863
+
 pBgivenA1 = .9
 pBgivenA2 = .1
 
 pA1givenB = pA1*pBgivenA1/(pA1*pBgivenA1+pA2*pBgivenA2)
 pA1givenB
 ```
+
 Although one might, myself included, expect the probability of rain to be fairly high given the weatherman is correct 90% of the time, we can see that using the given probabilities alongside Baye's theorem, the probability of it raining on Jane's wedding is only 11.04%. This can be mathematically verified by plugging each probability and conditional probaility into Baye's equation. Since it only rains 5 days out of 365, this means that even though the weatherman has been considerably accurate in the past, it is still very likely that he is incorrect on his prediction because of how small the initial chance of it raining is. For example, if someone were to win a raffle out of one-thousand people, their "success rate" would be 100%, however this does not change the fact that for the next raffle, their odds are still one to one-thousand. 
