@@ -1,3 +1,5 @@
+[View as a Blog Page](https://adamwk97.github.io/ASModule4/)
+
 ## Module 4 - Probability Theory
 
 ```
